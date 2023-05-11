@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/home.css" />
+    <title>FoodCrawl | Home</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <a class="header__logo" href="./index.html">
+        <img
+          class="header__logo-img"
+          src="./img/logo.png"
+          alt="FoodCrawl Logo"
+        />
+      </a>
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a class="navbar__link1" href="./index.html">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link2" href="">Recommendations</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <hero class="hero">
+      <div class="hero__container">
+        <h1 class="hero__title">
+          Taste Expedition:
+          <div class="hero__title--feature">
+            <span style="--i: 1">F</span>
+            <span style="--i: 2">O</span>
+            <span style="--i: 3">O</span>
+            <span style="--i: 4">D</span>
+            <span style="--i: 5">C</span>
+            <span style="--i: 6">R</span>
+            <span style="--i: 7">A</span>
+            <span style="--i: 8">W</span>
+            <span style="--i: 9">L</span>
+            <!-- <span style="--i: 10">!</span> -->
+          </div>
+        </h1>
+        <div class="hero__slogan">
+          <p class="hero__slogan-description">
+            Life is too short to be eating anything less than 4.5 stars
+          </p>
+          <img
+            src="./img/starts_4.5-removebg-preview.png "
+            alt="stars"
+            class="hero__slogan-stars"
+          />
+        </div>
+        <a href="#main" class="hero__button">Get Started</a>
+      </div>
+      <div class="hero__images">
+        <img src="./img/hero1.jpeg" alt="Food image one" class="hero__img1" />
+        <img src="./img/hero2.jpeg" alt="Food image two" class="hero__img2" />
+        <img src="./img/hero3.jpeg" alt="Food image three" class="hero__img3" />
+      </div>
+    </hero>
+
+    <!-- MAIN SECTION -->
+
+    <section class="main" id="main">
+      <div class="main__input">
+        <h2 class="main__title">Get Your Grub On</h2>
+        <p class="main__description">
+          Discover your next favorite restaurant with our easy-to-use search
+          tool. Simply type in your preferred cuisine and location and let us do
+          the rest
+        </p>
+        <div class="main__container">
+          <form action="" class="main__form">
+            <div class="main__form-field">
+              <label class="form__label" for="location">Location</label>
+              <input
+                type="text"
+                class="form__input"
+                id="location"
+                placeholder="Toronto "
+              />
+            </div>
+            <div class="main__form-field">
+              <label class="form__label" for="cuisine">Cuisine</label>
+              <input
+                type="text"
+                class="form__input"
+                id="cuisine"
+                placeholder="Italian "
+              />
+            </div>
+            <button class="main__btn">Nom Nom Now</button>
+          </form>
+
+          <img class="main__img" src="./img/form_img.jpg" alt="" />
+        </div>
+      </div>
+
+      <h3 class="main__subtitle">Recommendations</h3>
+
+      <div class="main__results"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__social">
+          <h2 class="footer__title">Follow FoodCrawl on Social Media</h2>
+          <div class="footer__social-links">
+            <a class="footer__social-link" href="https://www.instragam.com">
+              <ion-icon
+                class="footer__social-img"
+                name="logo-instagram"
+              ></ion-icon>
+            </a>
+            <a class="footer__social-link" href="https://www.instragam.com">
+              <ion-icon
+                class="footer__social-img"
+                name="logo-facebook"
+              ></ion-icon>
+            </a>
+            <a class="footer__social-link" href="https://www.instragam.com">
+              <ion-icon
+                class="footer__social-img"
+                name="logo-twitter"
+              ></ion-icon>
+            </a>
+          </div>
+        </div>
+
+        <a href="./index.html" class="footer__logo">
+          <img
+            class="footer__logo-img"
+            src="./img/logo.png"
+            alt="picture of FoodCrawl logo"
+          />
+        </a>
+      </div>
+
+      <p class="footer__copyright">
+        Copyright FoodCrawl © 2023 All Rights Reserved
+      </p>
+      <p class="footer__copyright">Made by : Tina, Vincent, and Neha</p>
+    </footer>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
